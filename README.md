@@ -1,4 +1,4 @@
-# CSAdvisor
+# Swipe & Go 
 
 ## Main Idea
-Make a kiosk that UC Davis CS students can log into. Upon Login, the app. will show the user their current major progression, and will (through the use of a trained ML Model) provide specified advice and a specified plan as to how the student can graduate most efficiently. 
+A Tinder-like, swipe-based activity recommender app that learns the user's personality and preferences over time. By analyzing factors like location, interests, time of day, and past swipes, the app intelligently suggests activities that align with the user's vibe. 
