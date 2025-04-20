@@ -1,6 +1,12 @@
 module SwipeNGo
 
+<<<<<<< HEAD
 go 1.23
+=======
+go 1.23.0
+
+toolchain go1.24.2
+>>>>>>> 833b6497ed3a9aa355afed4d921fd066e15be8b8
 
 require (
 	cel.dev/expr v0.19.2 // indirect
@@ -56,6 +62,7 @@ require (
 	github.com/xdg-go/scram v1.1.2 // indirect
 	github.com/xdg-go/stringprep v1.0.4 // indirect
 	github.com/youmark/pkcs8 v0.0.0-20240726163527-a2c0da244d78 // indirect
+	go.mongodb.org/mongo-driver v1.17.3 // indirect
 	go.mongodb.org/mongo-driver/v2 v2.2.0 // indirect
 	go.opentelemetry.io/auto/sdk v1.1.0 // indirect
 	go.opentelemetry.io/contrib/detectors/gcp v1.34.0 // indirect

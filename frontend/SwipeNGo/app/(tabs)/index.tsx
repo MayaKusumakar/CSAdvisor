@@ -71,12 +71,12 @@ export default function HomeScreen() {
         even_more_more_more_description: "Use the below snippet to make requests to the backend"
       }
       const response: Response = await fetch(
-          'http://localhost:8080/ping', {
-            method: 'POST',
+          'http://localhost:8080/getEvents', {
+            method: 'GET',
             headers: {
               "Content-Type": "application/json"
             },
-            body: JSON.stringify(postBody)
+            // body: JSON.stringify(postBody)
           }
       )
       if (response.status === 200) {
@@ -86,7 +86,7 @@ export default function HomeScreen() {
         const data = await response.json();
         // data is a json object with your data.
 
-          setSomeState(JSON.stringify(data))
+          setSomeState(JSON.stringify(JSON.parse(data.data)[1]));
       } else {
         setSomeState("Error: Did not receive response status 200: " + response.status);
       }
