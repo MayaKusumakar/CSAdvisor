@@ -1,6 +1,6 @@
 module SwipeNGo
 
-go 1.24.2
+go 1.23
 
 require (
 	cel.dev/expr v0.19.2 // indirect

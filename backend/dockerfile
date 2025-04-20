@@ -2,4 +2,6 @@ FROM golang:latest
 WORKDIR /usr/src/app
 
 # Download Dependencies
-RUN go mod download
+# RUN go mod download
+
+CMD ["go" ,"run", "cmd/api/main.go"]
