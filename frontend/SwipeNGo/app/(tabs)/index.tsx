@@ -6,9 +6,11 @@ import { ThemedText } from '@/components/ThemedText';
 import { ThemedView } from '@/components/ThemedView';
 import { Button, ButtonText } from "@/components/ui/button"
 import LoginButton from "@/components/login/LoginButton";
+import {useNavigation} from "@react-navigation/native";
 
 
 export default function HomeScreen() {
+  const navigation = useNavigation();
   return (
     <ParallaxScrollView
       headerBackgroundColor={{ light: '#A1CEDC', dark: '#1D3D47' }}
@@ -19,13 +21,9 @@ export default function HomeScreen() {
         />
       }>
 
-        <Button size="md" variant="solid" action="primary">
+        <Button size="md" variant="solid" action="primary" onPress={() => navigation.navigate('login')}>
             <ButtonText>Hello World!</ButtonText>
         </Button>
-
-
-
-
     </ParallaxScrollView>
   );
 }
