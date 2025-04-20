@@ -1,0 +1,16 @@
+services:
+  api:
+    build: ./backend
+    volumes:
+      - './backend:/usr/src/app'
+    ports:
+      - '8080:8080'
+    command: tail -F anything
+
+  app:
+    build: ./frontend
+    volumes:
+      - './frontend:/usr/src/app'
+    ports:
+      - '8081:8081'
+#    command: tail -F anything
