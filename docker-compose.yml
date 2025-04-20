@@ -13,4 +13,4 @@ services:
       - './frontend:/usr/src/app'
     ports:
       - '8081:8081'
-#    command: tail -F anything
+    command: tail -F anything

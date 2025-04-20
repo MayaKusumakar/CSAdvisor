@@ -5,6 +5,8 @@ import ParallaxScrollView from '@/components/ParallaxScrollView';
 import { ThemedText } from '@/components/ThemedText';
 import { ThemedView } from '@/components/ThemedView';
 import { Button, ButtonText } from "@/components/ui/button"
+import LoginButton from "@/components/login/LoginButton";
+
 
 export default function HomeScreen() {
   return (
